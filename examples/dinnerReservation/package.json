@@ -1,0 +1,15 @@
+{
+  "name": "dinner-reservation",
+  "version": "1.0.0",
+  "description": "example node js chatbot Microsoft Bot Framework - dinner reservation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elias Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.11.0",
+    "restify": "^6.0.1"
+  }
+}

@@ -12,7 +12,7 @@ Proyecto Memoria Ing.Civil
 ```
 sudo npm run start
 ```
-- Ingrear a directorio ../test y ejecutar:
+- Ingrear a directorio ../test o /examples/.. y ejecutar:
 ```
 node app.js
 ```
