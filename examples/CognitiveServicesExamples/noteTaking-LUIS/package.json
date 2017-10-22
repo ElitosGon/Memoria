@@ -1,0 +1,15 @@
+{
+  "name": "note-taking",
+  "version": "1.0.0",
+  "description": "Chatbot para tomar notas con analizador de intenciones LUIS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elias Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.11.0",
+    "restify": "^6.0.1"
+  }
+}
