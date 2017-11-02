@@ -2,7 +2,7 @@ require('dotenv').load();
 
 var builder = require('botbuilder');
 var restify = require('restify');
-var translator_text = require('./translator_text');
+var linguistic_analysis = require('./linguistic_analysis');
 var request = require('request');
 
 // Setup Restify Server
@@ -26,24 +26,34 @@ server.post('/api/messages', connector.listen());
 // match any intents handled by other dialogs.
 var bot = new builder.UniversalBot(connector, 
     function (session, args) {
-        session.send("Hi... I'm the translator text bot sample.");
-        /*  Test Translator text translator_text */
+        session.send("Hi... I'm the linguistic analysis bot sample.");
         
-        var documents = { from: 'es', to: 'en', text: session.message.text };
+        /*  Test Linguistic analysis linguistic_analysis */
+        /* analyze text */
+        var body_object = linguistic_analysis.body_get_analyze_text("en", ["4fa79af1-f22c-408d-98bb-b7d7aeef7f04", "22a6b758-420f-4745-8a3c-46835a67c0d2"], session.message.text);
 
-        /*Get token API*/
-        translator_text.get_token(function(err, data){
+        linguistic_analysis.get_analyze_text(body_object.body ,function(err, data){
             if(data){
-                translator_text.get_translation(documents.text, documents.from, documents.to, data, function(err, data){
-                    if(data){
-                        session.send(data);
-                    }
-                    if(err){
-                        session.send("Error Translator-Text-API\n"+err);
-                    }
-                });
+                session.send(data);
+            }
+            if(err){
+                session.send("Error Linguistic-Analysis-API\n"+err);
             }
         });
+
+
+        /* list analyzers*/
+        
+        linguistic_analysis.get_list_analyzers(function(err, data){
+            if(data){
+                session.send(data);
+            }
+            if(err){
+               session.send("Error Linguistic-Analysis-API\n"+err);
+            }
+        });
+        
+        
     }
 );
 

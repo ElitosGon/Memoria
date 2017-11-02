@@ -4,5 +4,5 @@ module.exports = function () {
     global.indexName = process.env.INDEX_NAME ? process.env.AZURE_SEARCH_NAME : "<YourIndexName>";
     global.searchKey = process.env.INDEX_NAME ? process.env.AZURE_SEARCH_KEY : "<YourSearchKey>";
     
-    global. queryString = 'https://' + searchName + '.search.windows.net/indexes/' + indexName + '/docs?api-key=' + searchKey + '&api-version=2015-02-28&';
+    global. queryString = 'https://' + searchName + '.search.microsoftAzure.net/indexes/' + indexName + '/docs?api-key=' + searchKey + '&api-version=2015-02-28&';
 }

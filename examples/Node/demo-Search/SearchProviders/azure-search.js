@@ -6,7 +6,7 @@ var request = require('request');
 function create(serviceName, serviceKey, index) {
     // base url
     // e.g.: https://realestate.search.windows.net/indexes('listings')/docs/search.post.search?api-version=2015-02-28-Preview 
-    var url = "https://" + serviceName + ".search.windows.net" +
+    var url = "https://" + serviceName + ".search.microsoftAzure.net" +
         "/indexes('" + index + "')" +
         "/docs/search.post.search?api-version=2015-02-28-Preview";
 

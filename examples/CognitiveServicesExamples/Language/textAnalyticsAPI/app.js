@@ -1,10 +1,10 @@
 require('dotenv').load();
-
 var builder = require('botbuilder');
 var restify = require('restify');
 var detect_language = require('./detect_language');
 var analyze_sentiment = require('./analyze_sentiment');
 var extract_key_phrases = require('./extract_key_phrases');
+var textAnalitycsAPI = require('./textAnalitics');
 
 // Setup Restify Server
 var server = restify.createServer();
@@ -30,6 +30,19 @@ var bot = new builder.UniversalBot(connector,
         session.send("Hi... I'm the text analitics bot sample. I can analyze opinions, get the key phrases and detect language.");
         
         /*  Test TestAnalitycsAPI detect_language */
+        var parameters = textAnalitycsAPI.parameters_get_language(2);
+        var body_object = textAnalitycsAPI.body_get_language();
+        body_object.add_item("1", session.message.text);
+
+        textAnalitycsAPI.get_language(parameters, body_object.body, function (err, data) {
+            if(data){
+                session.send(data);
+            }
+            if(err){
+                session.send("Error Text-Analitycs-API \n "+ err);
+            }
+        });
+
         /*
         var documents = { 'documents': [
             { 'id': '1', 'text': session.message.text }
@@ -47,20 +60,18 @@ var bot = new builder.UniversalBot(connector,
 
 
         /*  Test TestAnalitycsAPI analyze_sentiment */
-        /*
-        var documents = { 'documents': [
-            { 'id': '1', 'language': 'es', 'text': session.message.text }
-        ]};
+        body_object = textAnalitycsAPI.body_get_sentiments();
+        body_object.add_item("1", session.message.text, "en");
 
-        analyze_sentiment.get_sentiments(documents, function(err, data){
+        textAnalitycsAPI.get_sentiments(body_object.body, function (err, data) {
             if(data){
                 session.send(data);
             }
             if(err){
-                session.send("Error Text-Analitycs-API\n"+err);
+                session.send("Error Text-Analitycs-API \n "+ err);
             }
         });
-        */
+
 
 
         /*  Test TestAnalitycsAPI extract_key_phrases */
@@ -84,3 +95,18 @@ var bot = new builder.UniversalBot(connector,
 
 
 
+/*
+var documents = { 'documents': [
+    { 'id': '1', 'language': 'es', 'text': session.message.text }
+]};
+
+analyze_sentiment.get_sentiments(documents, function(err, data){
+    if(data){
+        session.send(data);
+        body.push(data);
+    }
+    if(err){
+        session.send("Error Text-Analitycs-API\n"+err);
+    }
+});
+*/

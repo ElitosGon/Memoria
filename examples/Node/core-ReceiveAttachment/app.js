@@ -37,8 +37,9 @@ var bot = new builder.UniversalBot(connector, function (session) {
             function (response) {
 
                 // Send reply with attachment type & size
+                session.conversationData.attachments[0] = attachment;
                 var reply = new builder.Message(session)
-                    .text('Attachment of %s type and size of %s bytes received.', attachment.contentType, response.length);
+                    .text('Attachment of %s type and size of %s bytes received.', attachment.contentUrl, response.length);
                 session.send(reply);
 
             }).catch(function (err) {
