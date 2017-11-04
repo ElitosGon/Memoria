@@ -30,8 +30,9 @@ var bot = new builder.UniversalBot(connector,
         
         /*  Test Web Language Model web_language_model */
         /* break_into_words */
-        /*
-        web_language_model.get_model_break_into_words('query', session.message.text, '', '',function(err, data){
+        var parameters = web_language_model.parametersBreakInToWords('query', session.message.text, '', '');
+
+        web_language_model.breakInToWords(parameters ,function(err, data){
             if(data){
                 session.send(data);
             }
@@ -39,7 +40,7 @@ var bot = new builder.UniversalBot(connector,
                 session.send("Error Web-Language-Model-API\n"+err);
             }
         });
-        */
+
 
         /* calculate_conditional_probability */
         /*

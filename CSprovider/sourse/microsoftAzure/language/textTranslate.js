@@ -7,13 +7,14 @@ var parseString = require('xml2js').parseString;
 
 const uri = process.env.TRANSLATOR_TEXT_API_ENDPOINT;
 const accessKey = process.env.TRANSLATOR_TEXT_API_KEY;
-const pathTranslation = 'https://api.microsofttranslator.com/V2/Http.svc/Translate';
-const pathMultiTranslation = 'https://api.microsofttranslator.com/V2/Http.svc/TranslateArray';
-const pathLanguageNames = 'https://api.microsofttranslator.com/V2/Http.svc/GetLanguageNames';
-const pathLanguageNamesForTranslate = 'https://api.microsofttranslator.com/V2/Http.svc/GetLanguagesForTranslate';
-const pathDetect = 'https://api.microsofttranslator.com/V2/Http.svc/Detect';
-const pathMultiDetect = 'https://api.microsofttranslator.com/V2/Http.svc/DetectArray';
-const pathBreakSentences = 'https://api.microsofttranslator.com/V2/Http.svc/BreakSentences';
+const path = "api.microsofttranslator.com/V2/Http.svc";
+const pathTranslation = '/Translate';
+const pathMultiTranslation = '/TranslateArray';
+const pathLanguageNames = '/GetLanguageNames';
+const pathLanguageNamesForTranslate = '/GetLanguagesForTranslate';
+const pathDetect = '/Detect';
+const pathMultiDetect = '/DetectArray';
+const pathBreakSentences = '/BreakSentences';
 
 /* Future
 * const pathLanguagesForSpeak
@@ -29,7 +30,7 @@ module.exports = {
         
         var options = {
             method: 'GET',
-            uri: pathTranslation,
+            uri: 'https://' + path + pathTranslation,
             qs: parameters,
             headers: {
                 'Ocp-Apim-Subscription-Key': accessKey,
@@ -58,7 +59,7 @@ module.exports = {
         
         var options = {
             method: 'POST',
-            uri: pathMultiTranslation,
+            uri: 'https://' + path + pathMultiTranslation,
             headers: {
                 'Ocp-Apim-Subscription-Key': accessKey,
             },
@@ -89,7 +90,7 @@ module.exports = {
 
        var options = {
             method: 'POST',
-            uri: pathLanguageNames,
+            uri: 'https://' + path + pathLanguageNames,
             qs: parameters,
             headers: {
                 'Ocp-Apim-Subscription-Key': accessKey,
@@ -121,7 +122,7 @@ module.exports = {
 
        var options = {
             method: 'GET',
-            uri: pathLanguageNamesForTranslate,
+            uri: 'https://' + path + pathLanguageNamesForTranslate,
             headers: {
                 'Ocp-Apim-Subscription-Key': accessKey,
             },
@@ -150,7 +151,7 @@ module.exports = {
 
        var options = {
             method: 'GET',
-            uri: pathDetect,
+            uri: 'https://' + path + pathDetect,
             qs: parameters,
             headers: {
                 'Ocp-Apim-Subscription-Key': accessKey,
@@ -180,7 +181,7 @@ module.exports = {
 
        var options = {
             method: 'POST',
-            uri: pathMultiDetect,
+            uri: 'https://' + path + pathMultiDetect,
             qs: parameters,
             headers: {
                 'Ocp-Apim-Subscription-Key': accessKey,
@@ -212,7 +213,7 @@ module.exports = {
 
        var options = {
             method: 'GET',
-            uri: pathBreakSentences,
+            uri: 'https://' + path + pathBreakSentences,
             qs: parameters,
             headers: {
                 'Ocp-Apim-Subscription-Key': accessKey,

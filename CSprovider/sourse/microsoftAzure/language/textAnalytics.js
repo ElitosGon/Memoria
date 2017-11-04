@@ -72,7 +72,7 @@ module.exports = {
     },
 
     /* The API returns a list of strings denoting the key talking points in the input text. We employ techniques from Microsoft Office's sophisticated Natural Language Processing toolkit. */
-    get_key_phrases: function(body, callback) {
+    key_phrases: function(body, callback) {
         
         var options = {
             method: 'POST',

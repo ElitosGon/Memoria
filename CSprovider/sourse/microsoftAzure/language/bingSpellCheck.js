@@ -4,9 +4,9 @@ The Spell Check API lets you check a text string for spelling and grammar errors
 require('dotenv').load();
 var rp = require('request-promise');
 
-var accessKey = process.env.BING_SPELL_CHECK_API_KEY;
-var uri = process.env.BING_SPELL_CHECK_API_ENDPOINT;
-var pathSpellCheck = '/bing/v7.0/spellcheck/';
+const accessKey = process.env.BING_SPELL_CHECK_API_KEY;
+const uri = process.env.BING_SPELL_CHECK_API_ENDPOINT;
+const pathSpellCheck = '/bing/v7.0/spellcheck/';
 
 module.exports = {
 

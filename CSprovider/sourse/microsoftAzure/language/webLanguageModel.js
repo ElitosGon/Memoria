@@ -11,6 +11,7 @@ const pathBreakInToWords = '/breakIntoWords';
 const pathCalculateConditionalProbability = '/calculateConditionalProbability';
 const pathCalculateJointProbability = '/calculateJointProbability';
 const pathGenerateNextWords = '/generateNextWords';
+const pathListAvailableModels = '/models';
 
 module.exports = {
 
@@ -109,6 +110,7 @@ module.exports = {
             uri: 'https://' + uri + pathCalculateJointProbability,
             qs: parameters,
             headers: {
+                'Content-Type': 'application/json',
                 'Ocp-Apim-Subscription-Key': accessKey,
             },
             body: body,
@@ -188,5 +190,36 @@ module.exports = {
         maxNumOfCandidatesReturned: maxNumOfCandidatesReturned__
     }
    },
+
+   /* List models available currently. */
+   listAvailableModels: function(callback){
+
+        var options = {
+            method: 'GET',
+            uri: 'https://' + uri + pathListAvailableModels,
+            headers: {
+                'Content-Type': 'application/json',
+                'Ocp-Apim-Subscription-Key': accessKey,
+            },
+            json: true
+        };
+
+        var res = rp(options)
+            .then(function (parsedBody) {
+                // POST succeeded...
+                var body_ = JSON.stringify (parsedBody, null, '  ');
+                //console.log(body_);
+                return callback(null, body_);
+                
+            })
+            .catch(function (err) {
+                // POST failed...
+                var err_ = JSON.stringify (err, null, '  ');
+                //console.log(err_);
+                return callback(err_, null);
+        });
+
+   },
+
 }
 

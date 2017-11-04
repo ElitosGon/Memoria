@@ -20,7 +20,7 @@ module.exports = {
         
         var options = {
             method: 'POST',
-            uri: uri + pathAnalyzeText,
+            uri: 'https://' + uri + pathAnalyzeText,
             headers: {
                 'Content-Type': 'application/json',
                 'Ocp-Apim-Subscription-Key': accessKey,
@@ -50,7 +50,7 @@ module.exports = {
         
         var options = {
             method: 'GET',
-            uri: uri + pathGetListAnalyzers,
+            uri: 'https://' + uri + pathGetListAnalyzers,
             headers: {
                 'Content-Type': 'application/json',
                 'Ocp-Apim-Subscription-Key': accessKey,

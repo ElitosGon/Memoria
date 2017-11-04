@@ -29,14 +29,13 @@ var bot = new builder.UniversalBot(connector,
         
 
         /*  Test BingSpellCheckAPI bing_spell_check */
-        /*
         var documents = {
             'mode': 'proof', 
             "mkt": "en-US", 
             'text': session.message.text 
         };
 
-        bing_spell_check.get_spell_check(documents, function(err, data){
+        bing_spell_check.spellCheck(documents, function(err, data){
             if(data){
                 session.send(data);
             }
@@ -44,7 +43,7 @@ var bot = new builder.UniversalBot(connector,
                 session.send("Error Bing-Spell-Check-API\n"+err);
             }
         });
-        */
+
 
     }
 );

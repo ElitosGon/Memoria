@@ -4,7 +4,6 @@
     <list default="true" id="8cdade26-e67e-48bd-bfd3-d74d74262803" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSprovider/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/index.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/bingSpellCheckAPI/.env" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/bingSpellCheckAPI/app.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/bingSpellCheckAPI/bing_spell_check.js" afterPath="" />
@@ -26,6 +25,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/webLanguageModelAPI/package.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/webLanguageModelAPI/web_language_model.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/index.js" afterPath="$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/app.js" afterPath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/bing_spell_check.js" afterPath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/bing_spell_check.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/app.js" afterPath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/web_language_model.js" afterPath="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/web_language_model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Node/core-ReceiveAttachment/app.js" afterPath="$PROJECT_DIR$/examples/Node/core-ReceiveAttachment/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Node/demo-Search/SearchProviders/azure-search.js" afterPath="$PROJECT_DIR$/examples/Node/demo-Search/SearchProviders/azure-search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/Node/sample-knowledgeBot/config.js" afterPath="$PROJECT_DIR$/examples/Node/sample-knowledgeBot/config.js" />
@@ -41,7 +45,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="web_language_model.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/web_language_model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-54">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +83,12 @@
         <option value="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/translatorTextAPI/app.js" />
         <option value="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/translatorTextAPI/translator_text.js" />
         <option value="$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/language/textTranslate.js" />
+        <option value="$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/index.js" />
+        <option value="$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/language/bingSpellCheck.js" />
+        <option value="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/bing_spell_check.js" />
+        <option value="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/app.js" />
+        <option value="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/app.js" />
+        <option value="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/web_language_model.js" />
       </list>
     </option>
   </component>
@@ -81,11 +114,11 @@
     <handled-path value="$PROJECT_DIR$/examples/dinnerReservation/node_modules" />
     <handled-path value="$PROJECT_DIR$/test/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="75" />
-    <option name="y" value="44" />
+    <option name="y" value="16" />
     <option name="width" value="1275" />
-    <option name="height" value="704" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -160,7 +193,7 @@
               <item name="examples" type="462c0819:PsiDirectoryNode" />
               <item name="CognitiveServicesExamples" type="462c0819:PsiDirectoryNode" />
               <item name="Language" type="462c0819:PsiDirectoryNode" />
-              <item name="translatorTextAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="webLanguageModelAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Memoria" type="b2602c69:ProjectViewProjectNode" />
@@ -192,26 +225,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.textTranslate.js">
+  <component name="RunManager" selected="Node.js.app.js (4)">
     <configuration name="app.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/linguisticAnalysisAPI" />
     <configuration name="app.js (2)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/translatorTextAPI" />
-    <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/textAnalyticsAPI" />
-    <configuration name="test8.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="test8.js" working-dir="$PROJECT_DIR$/test_node" />
+    <configuration name="app.js (3)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI" />
+    <configuration name="app.js (4)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI" />
     <configuration name="textTranslate.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="textTranslate.js" working-dir="$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/language" />
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.test8.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.app.js (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.textTranslate.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.textTranslate.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.app.js (3)" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.app.js (4)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.textTranslate.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.app.js (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.app.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.test8.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js (4)" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.app.js (3)" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.textTranslate.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.app.js (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -226,21 +259,22 @@
       <option name="presentableId" value="Default" />
       <updated>1509465991982</updated>
       <workItem from="1509465997666" duration="721000" />
-      <workItem from="1509562582483" duration="12300000" />
+      <workItem from="1509562582483" duration="14671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13021000" />
+    <option name="totallyTimeSpent" value="15392000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="44" width="1275" height="704" extended-state="0" />
+    <frame x="65" y="-4" width="1295" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24941176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24555984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.5027451" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943144" sideWeight="0.4972549" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.4972549" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -364,6 +398,60 @@
     <entry file="file://$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/language/linguisticAnalysis.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSprovider/sourse/microsoftAzure/language/bingSpellCheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/bing_spell_check.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1058">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/bingSpellCheckAPI/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" column="36" lean-forward="false" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/CognitiveServicesExamples/Language/webLanguageModelAPI/web_language_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
